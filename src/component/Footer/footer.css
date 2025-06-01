@@ -1,0 +1,161 @@
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 40px 0 20px;
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.social-link:hover {
+  background-color: #007bff;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.social-link:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+.footer-text {
+  text-align: center;
+  width: 100%;
+}
+
+.footer-text p {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  line-height: 1.5;
+}
+
+.heart {
+  color: #ff4757;
+  animation: heartbeat 1.5s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 0 15px;
+  }
+  
+  .footer-container {
+    padding: 0 15px;
+  }
+  
+  .footer-social {
+    gap: 15px;
+  }
+  
+  .social-link {
+    width: 42px;
+    height: 42px;
+  }
+  
+  .footer-text p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  .footer {
+    padding: 25px 0 15px;
+    width: 100%;
+  }
+  
+  .footer-container {
+    padding: 0 12px;
+    width: 100%;
+  }
+  
+  .footer-content {
+    gap: 15px;
+  }
+  
+  .footer-social {
+    gap: 12px;
+  }
+  
+  .social-link {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer-text p {
+    font-size: 0.8rem;
+    gap: 6px;
+  }
+}
+
+/* Extra small mobile */
+@media (max-width: 320px) {
+  .footer-container {
+    padding: 0 10px;
+  }
+  
+  .footer-social {
+    gap: 10px;
+  }
+  
+  .social-link {
+    width: 38px;
+    height: 38px;
+  }
+  
+  .footer-text p {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+}
