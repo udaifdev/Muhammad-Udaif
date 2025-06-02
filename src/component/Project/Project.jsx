@@ -46,8 +46,8 @@ const Project = () => {
             title: "Author Arjun Maurya",
             image: "images/author front page.png",
             description: "Clean portfolio for Kannada author ,writer & books show case .",
-            liveLink: "https://example.com/decision-tree",
-            codeLink: "https://github.com/example/decision-tree",
+            liveLink: "https://author-project-mauve.vercel.app/",
+            codeLink: "https://github.com/udaifdev/Author-Project",
         },
         {
             id: 5,
